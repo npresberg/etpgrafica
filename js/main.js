@@ -41,7 +41,7 @@ jQuery(function($) {
 	form.submit(function () {
 		var sign = form.prev().removeClass('alert-success').removeClass('alert-error'); 
 		$.post(form.attr('action'), form.serialize(), function(data) {
-			sign.addClass('alter-'+data.status).text(data.message).fadeIn().delay(3000).fadeOut();
+			sign.addClass('alert-'+data.type).text(data.message).fadeIn().delay(3000).fadeOut();
 		},'json');
 		return false;
 	});
