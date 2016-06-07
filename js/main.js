@@ -39,9 +39,9 @@ jQuery(function($) {
 	//contact form
 	var form = $('.contact-form');
 	form.submit(function () {
-		$this = $(this);
-		$.post($(this).attr('action'), function(data) {
-			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
+		var sign = form.prev().removeClass('alert-success').removeClass('alert-error'); 
+		$.post(form.attr('action'), form.serialize(), function(data) {
+			sign.addClass('alter-'+data.status).text(data.message).fadeIn().delay(3000).fadeOut();
 		},'json');
 		return false;
 	});
