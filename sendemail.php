@@ -14,18 +14,18 @@
 	$email_to = "npresberg@gmail.com";//"info@etpgrafica.com.ar";
 	$subject = "Contacto desde el sitio web";
 
-	$email_message = "Detalles del formulario de contacto:\n\n";
-	$email_message .= "Nombre: " . $name . "\n";
-	$email_message .= "Empresa: " . $company . "\n";
-	$email_message .= "E-mail: " . $email . "\n";
-	$email_message .= "Mensaje: " . $message . "\n\n";
+	$body = "Detalles del formulario de contacto:\n\n";
+	$body .= "Nombre: " . $name . "\n";
+	$body .= "Empresa: " . $company . "\n";
+	$body .= "E-mail: " . $email . "\n";
+	$body .= "Mensaje: " . $message . "\n\n";
 
 
 	// Ahora se envía el e-mail usando la función mail() de PHP
-	$headers = 'From: '.$email_from."\r\n".
-		'Reply-To: '.$email_from."\r\n" .
+	$headers = 'From: '.$email."\r\n".
+		'Reply-To: '.$email."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-	$sucess = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
+	$sucess = @mail($email_to, $subject, $body, 'From: <'.$email.'>');
 
-  echo '{"type":"success","message":"Mail enviado!"}';
+  echo '{"type":"success","message":"Gracias, nos estaremos contactando a la brevedad!"}';
 ?>
