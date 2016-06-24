@@ -11,7 +11,7 @@
 	}
 
 	// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-	$email_to = "npresberg@gmail.com";//"info@etpgrafica.com.ar";
+	$email_to = "info@etpgrafica.com.ar";
 	$subject = "Contacto desde el sitio web";
 
 	$body = "Detalles del formulario de contacto:\n\n";
