@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81124496-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -35,13 +46,14 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">Nosotros</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about-us.html">Nosotros</a></li>
                     <li><a href="services.html">Servicios</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <!--<li><a href="portfolio.html">Portfolio</a></li>-->
                     <li><a href="clientes.html">Clientes</a></li>
                     <li><a href="promos.html">Promos</a></li>
                     <li><a href="#footer">Contacto</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
                 </ul>
             </div>
                 </ul>
@@ -50,11 +62,20 @@
     </header><!--/header-->
     <section id="about-us" class="container">
         <div class="row">
-            <div class="col-sm-12">
-                <p>Desde hace más de una década que nos esforzamos día a día en superarnos y en satisfacer las necesidades de nuestros clientes que, por suerte, nos exigen cada vez más. Porque confían en nuestra profesionalidad, presentándonos nuevos desafíos que nos hacen crecer y ampliar nuestro repertorio.</p>
+                 <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <blockquote>
+                                <p>Desde hace más de una década que nos esforzamos día a día en superarnos y en satisfacer las necesidades de nuestros clientes que, por suerte, nos exigen cada vez más. Porque confían en nuestra profesionalidad, presentándonos nuevos desafíos que nos hacen crecer y ampliar nuestro repertorio.</p>
+                <p>Estamos orientados a entregar un servicio de calidad, hemos conformado una saludable unidad de trabajo compuesta por nuestros clientes, proveedores y equipo de trabajo.
+                Juntos, hemos conformado una alianza muy linda que escapa a lo material y comercial, que se retroalimenta y crece día a día y así desde nuestro lugar contribuimos a mejorar la calidad de vida de todos.</p>
+                                <small>El Equipo <cite title="Source Title">ETP</cite></small>
+                            </blockquote>
+
+                        </div>
             </div><!--/.col-sm-6-->
         <div class="gap"></div>
-        <h1 class="center">El Equipo</h1>
+        <!--<h1 class="center">El Equipo</h1>
         <p class="lead center"></p>
         <div class="gap"></div>
 
@@ -113,6 +134,9 @@
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" name="email" required="required" placeholder="Email*">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Inscribirme a Newsletter!</label>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
