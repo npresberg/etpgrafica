@@ -63,6 +63,10 @@ hr {
   color: #A7A7A7;
 }
 
+.checkbox-presupuesto input {
+  margin-right:5px;
+}
+
 .btn {
   font-weight: 400;
 }
