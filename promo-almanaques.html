@@ -22,7 +22,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>ETP | Servicios</title>
+	<title>ETP | Promo Almanaques</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/prettyPhoto.css" rel="stylesheet">
@@ -60,7 +60,13 @@
 					<!--<li><a href="portfolio.html">Portfolio</a></li>-->
 					<li><a href="clientes.html">Clientes</a></li>
 					<li><a href="promos.html">Promos</a></li>
-					<li class="active"><a href="presupuesto.html">Presupuesto</a></li>
+					<li class="dropdown active">
+                        <a href="presupuesto.html" class="dropdown-toggle" data-toggle="dropdown">Presupuesto<i class="fa-fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                        	<li><a href="presupuesto.html">General</a></li>
+                            <li><a href="promo-almanaques.html">Almanaques</a></li>
+                        </ul>
+                    </li>
 					<li><a href="#footer">Contacto</a></li>
 					
 				</ul>
@@ -73,7 +79,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<h1>Presupuesto</h1>
-					<p>Contanos qué necesitás hacer y nos comunicaremos a la brevedad</p>
+					<p>Adelantate a fin de año y pedinos tu cotización de Almanaques</p>
 				</div>
 			</div>
 		</div>
@@ -96,7 +102,7 @@
 								<input name="telephone" type="tel" class="form-control col-sm-6" placeholder="Teléfono">
 							</div>
 							<div class="col-sm-6">
-								<textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Danos todos los detalles que puedas (terminación, materiales, etc.)*"></textarea>
+								<textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Danos todos los detalles que puedas y que te parezcan importantes, para hacer el presupuesto lo más específico posible.*"></textarea>
 							</div>
 							<div class="col-sm-6">
 								<select name="medium" class="form-control col-sm-6">
@@ -109,10 +115,15 @@
 								</select>
 							</div>
 							<div class="col-sm-6">
-								<input name="product" type="text" class="form-control col-sm-6" required="required" placeholder="Qué vas a imprimir? Ej: Etiquetas*">
-							</div>
-							<div class="col-sm-6">
-								<input name="size" type="text" class="form-control col-sm-6" required="required" placeholder="Cuánto mide? Ej: 4x4 cm*">
+								<select name="medium" class="form-control col-sm-6">
+									<option value="">Tipo de Almanaque</option>
+									<option>Carpita</option>
+									<option>Poster A4</option>
+									<option>Cuadernillo A4</option>
+									<option>Poster A3</option>
+									<option>Poster 50x70 cm</option>
+									<option>Postales</option>
+								</select>
 							</div>
 							<div class="col-sm-6">
 								<input name="quantity" type="number" class="form-control col-sm-6" required="required" placeholder="Cantidad? Ej: 1000 unidades*">
